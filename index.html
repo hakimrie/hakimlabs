@@ -65,7 +65,6 @@
         pos -= 30;
         val.style[trans] = 'translateY(' + pos + 'px)';
         facebook.style[trans] = 'translateX('+pos+'px)';
-        console.log("width: " + (facebook.offsetWidth>>1))
         google_plus.style[trans] = 'translateX('+-.9*pos+'px)';
 
         
@@ -102,15 +101,19 @@
 
   function fallbackImageBackground(fature, result){
     if (result){
-      console.log("success");
       document.body.style.background = "#000 url(images/light.webp) no-repeat center center";
       document.getElementById("avatar").style.background = "url(images/hakim_japan.webp) no-repeat";
       document.getElementById("image_avatar").src = "images/hakim_japan.webp";
+      document.getElementById("twitter").style.background = "url(images/twitter_circle_64.webp) no-repeat";
+      document.getElementById("facebook").style.background = "url(images/facebook_circle_64.webp) no-repeat";
+      document.getElementById("google_plus").style.background = "url(images/google_plus_circle_64.webp) no-repeat";
     }else{
-      console.log("failed");
       document.body.style.background = "#000 url(images/light.png) no-repeat center center";
       document.getElementById("avatar").style.background = "url(images/hakim_japan.jpg) no-repeat";
       document.getElementById("image_avatar").src = "images/hakim_japan.jpg";
+      document.getElementById("twitter").style.background = "url(images/twitter_circle_64.png) no-repeat";
+      document.getElementById("facebook").style.background = "url(images/facebook_circle_64.png) no-repeat";
+      document.getElementById("google_plus").style.background = "url(images/google_plus_circle_64.png) no-repeat";
     }
   }
 
