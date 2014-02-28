@@ -64,6 +64,7 @@ li {margin-left: 0px}
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   float: left;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .avatar img{
@@ -79,7 +80,7 @@ li {margin-left: 0px}
   width: 64px;
   z-index: 1;
   position: absolute;
-  cursor: hand;
+  cursor: pointer;
 }
 /*
 .twitter{
